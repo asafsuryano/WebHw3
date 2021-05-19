@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>homework</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 60%;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 40%;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 700px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+	</head>
+    <body>
+        <div>
+            <a href="./index.html">go back to main page</a>
+            <header>
+                <h1 id="location_header">Spy Museum</h1>
+            </header>
+            <section>
+                <article>
+                    <p id="location_explenation">
+                    </p>
+                </article>
+            <nav>
+            <h2>Spy Museum in Boston
+                <span>
+                    <img id="location_pic">
+                </span>
+            </h2>
+            </nav>
+            </section>
+        </div>
+    </body>
+</html>
