@@ -3,14 +3,12 @@
 <head>
 <body>
     <form>
-        <input type="text" id="username">
-        <label for="username">Username</label></br>
-        <input type="password" id="password">
-        <label for="password">Password</label></br>
-        <input type="radio" id="normal" value="normal">
-        <label for="normal">Normal user</label></br>
-        <input type="radio" id="admin" value="admin">
-        <label for="admin">Admin user</label>
+        <input type="file" id="jsonFile">
+        <label for="jsonFile"></label>
+        <input type="button" onclick="readPathFromHtml()">
     </form>
+    <button id="admin" onclick="window.location.href='adminPage.html'">add location/delete location</button>
+    <button onclick="window.location.href='mainPage.html'">main page</button>
+    <script src="index.js"></script>
 </body>
 </html>
