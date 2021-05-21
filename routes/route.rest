@@ -1,0 +1,33 @@
+GET http://localhost:4000/sites
+
+###
+
+GET http://localhost:4000/sites/60a765806e8b235c9426390
+
+###
+
+POST http://localhost:4000/sites
+Content-Type: application/json
+
+{
+    "title": "B8e214146",
+    "details": "Halfon hakohoahko",
+    "path": "http://arfafa"
+}
+
+###
+
+DELETE http://localhost:4000/sites/60a7539d1f0ff16a40c1ed9d
+
+
+###
+PATCH http://localhost:4000/sites/60a7539d1f0ff16a40c1ed9d
+Content-Type: application/json
+
+{
+    "title": "Asaf"
+}
+
+
+###
+DELETE http://localhost:4000/sites

@@ -1,0 +1,29 @@
+{
+    "name": "webhw3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.12.10",
+        "multer": "^1.4.2",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "dotenv": "^9.0.2",
+        "nodemon": "^2.0.7"
+    },
+    "scripts": {
+        "devStart": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/asafsuryano/WebHw3.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/asafsuryano/WebHw3/issues"
+    },
+    "homepage": "https://github.com/asafsuryano/WebHw3#readme"
+}
