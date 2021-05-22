@@ -31,11 +31,11 @@ router.get('/:id', getSite, (req, res) => {
 })
 
 // Creating one
-router.post('/', upload.single('picturefile'), async(req, res) => {
+router.post('/', async(req, res) => {
     const site = new Site({
         title: req.body.title,
         details: req.body.details,
-        path: req.file.path
+        path: req.body.path
     })
     try {
         const newSite = await site.save()

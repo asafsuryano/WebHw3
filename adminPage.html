@@ -8,7 +8,7 @@
     
     <h1>Admin Page</h1>
     <button id="addButton" onclick="showAddForm()">Add tourist site</button>
-    <button id="deleteButton" onclick="showDeleteList()">Delete tourist from list</button>
+    <button id="deleteButton" onclick="showDeleteList()">Delete tourist site from list</button>
     <form id="addSiteForm">
         <textarea id="siteName" rows="1" cols=60>Please write the name of the site</textarea>
         <br>
@@ -17,6 +17,8 @@
         <br>
         <textarea id="siteDescription" rows="15" cols="80">Site Description</textarea>
     </form>
+    <br>
+    <button id="submitSite" onclick="addTouristLocation()">add site</button>
     <div id="delete">
         <ul id="deleteList">
 
