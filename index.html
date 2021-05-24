@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
 <body>
     <form>
         <input type="file" id="jsonFile">
         <label for="jsonFile"></label>
-        <input type="button" onclick="readPathFromHtml()">
+        <input type="button" onclick="readPathFromHtml()" class="btn btn-primary">
     </form>
-    <button id="admin" onclick="window.location.href='adminPage.html'">add location/delete location</button>
-    <button onclick="window.location.href='mainPage.html'">main page</button>
+    <button id="admin" onclick="window.location.href='adminPage.html'" class="btn btn-primary">add location/delete location</button>
+    <button onclick="window.location.href='mainPage.html'" class="btn btn-primary">main page</button>
     <script src="index.js"></script>
 </body>
+
 </html>
