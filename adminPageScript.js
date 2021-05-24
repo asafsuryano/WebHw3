@@ -80,9 +80,12 @@ function addTouristLocation() {
             }
         }
     }
+    let fd=new FormData();
+    fd.append("picturefile",fileName,fileName.name);
+    fd.append("title",locationJson.title);
+    fd.append("details",locationJson.details);
     xhr.open("POST", normalPath, true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify(locationJson));
+    xhr.send(fd);
 }
 
 function updateLocalStorage() {

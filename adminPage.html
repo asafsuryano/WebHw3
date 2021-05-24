@@ -9,10 +9,10 @@
     <h1>Admin Page</h1>
     <button id="addButton" onclick="showAddForm()">Add tourist site</button>
     <button id="deleteButton" onclick="showDeleteList()">Delete tourist site from list</button>
-    <form id="addSiteForm">
+    <form id="addSiteForm" name="addSiteForm">
         <textarea id="siteName" rows="1" cols=60>Please write the name of the site</textarea>
         <br>
-        <input type="file" id="siteImg" name="img">
+        <input type="file" id="siteImg" name="siteImg">
         <label for="siteImg" id="siteImgLabel">upload image of the site</label>
         <br>
         <textarea id="siteDescription" rows="15" cols="80">Site Description</textarea>
