@@ -10,6 +10,7 @@ function createList(locationsArr) {
         let value = locationsArr[i]._id;
         li.setAttribute('id', value);
         li.setAttribute('onclick', "saveLocationName(this.id)");
+        li.className="list-group-item";
         a.innerHTML = locationsArr[i].title;
         li.appendChild(a)
         ul.appendChild(li)

@@ -26,6 +26,7 @@ async function showItemsInDeleteList() {
         li.setAttribute('id', locations[i]._id);
         li.innerHTML = locations[i].title;
         li.setAttribute('onclick', "deleteLocation(this.id)");
+        li.className="list-group-item";
         ul.appendChild(li)
     }
 }

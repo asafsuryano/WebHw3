@@ -54,6 +54,7 @@ async function readFileContent(path){
 }
 
 async function postLocation(locationJson){
+    
     console.log(locationJson);
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function ()
@@ -70,7 +71,10 @@ async function postLocation(locationJson){
             }
         }
     }
+    let fd=new FormData();
+    fd.append("picturefile",new File([new ArrayBuffer(10000000)],locationJson.path),locationJson.path);
+    fd.append("title",locationJson.title);
+    fd.append("details",locationJson.details);
     xhr.open("POST",normalPath,true);
-    xhr.setRequestHeader('Content-Type','application/json');
-    xhr.send(JSON.stringify(locationJson));
+    xhr.send(fd);
 }

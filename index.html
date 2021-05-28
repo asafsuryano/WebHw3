@@ -4,11 +4,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-    <form>
-        <input type="file" id="jsonFile">
+    <form class="form-group">
+        <input type="file" id="jsonFile" >
         <label for="jsonFile"></label>
-        <input type="button" onclick="readPathFromHtml()" class="btn btn-primary">
+        <input type="button" onclick="readPathFromHtml()" value="Upload JSON">
     </form>
+    <br>
     <button id="admin" onclick="window.location.href='adminPage.html'" class="btn btn-primary">add location/delete location</button>
     <button onclick="window.location.href='mainPage.html'" class="btn btn-primary">main page</button>
     <script src="index.js"></script>
